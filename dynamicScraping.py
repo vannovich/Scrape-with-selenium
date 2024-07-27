@@ -15,7 +15,7 @@ def get_drvier():
 
 def main():
   driver = get_drvier()
-  element = driver.find_element(by="xpath", value="/div")
+  element = driver.find_element(by="xpath", value="/html/body/div[1]/div/h1[2]")
   return element.text
 
 print(main())
